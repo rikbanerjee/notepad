@@ -2,6 +2,15 @@
 docker build -t rik/mongodb .
 docker run -d --name mongo-db rik/mongodb
 
+docker run -d -p 27107:27107  --name mongo-db rik/mongodb
+
 docker build -t rik/node-app .
-docker run -it --link mongo-db:cvs-mongo --name nodeapp rik/node-app
+docker run -d --link mongo-db:mongo-db --name nodeapp rik/node-app
+docker start nodeapp
+docker logs -f nodeapp
+
+
+docker run -it --link mongo-db:mongo-db --name nodeapp rik/node-app
 ... where some-mongo is the name of your original mongo container.
+
+docker run -it --link mongo-db:mongo-db --name nodeapp rik/node-app bash
