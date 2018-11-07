@@ -6,6 +6,9 @@ docker run -d -p 27017:27017  --name mongo-db rik/mongodb
 
 docker build -t rik/node-app .
 docker run -d --link mongo-db:mongo-db --name nodeapp rik/node-app
+
+docker run -d --link mongo-db:mongo-db -p 8080:8080 --name nodeapp1 rik/node-app
+
 docker start nodeapp
 docker logs -f nodeapp
 
