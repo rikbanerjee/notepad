@@ -1,0 +1,16 @@
+
+Install Docker compose
+Run this command to download the latest version of Docker Compose:
+
+sudo curl -L "https://github.com/docker/compose/releases/download/1.23.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+Apply executable permissions to the binary:
+
+sudo chmod +x /usr/local/bin/docker-compose
+After you do the curl command , it'll put docker-compose into the
+
+/usr/local/bin
+which is not on the PATH To fix it, create a symbolic link:
+
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+And now if you do: docker-compose --version
