@@ -1,0 +1,35 @@
+Database Setup:
+Sign up for a free PostgreSQL database on Neon.tech
+Create a new project and get your database URL
+The free tier includes:
+10GB storage
+Unlimited projects
+No credit card required
+Backend Deployment:
+Sign up for Render.com
+Create a new Web Service
+Connect your GitHub repository
+Set environment variables:
+Apply to Home.jsx
+production
+The free tier includes:
+750 hours/month
+Automatic HTTPS
+Global CDN
+Frontend Deployment:
+Create another Web Service on Render
+Connect the same GitHub repository
+Set environment variables:
+Apply to Home.jsx
+production
+The frontend will be served from Render's CDN
+Cost Breakdown:
+Database (Neon.tech): Free tier
+Backend (Render): Free tier
+Frontend (Render): Free tier
+Total cost: $0/month
+Alternative Options:
+Railway.app: Similar free tier
+Fly.io: Generous free tier
+Vercel: Great for frontend
+Supabase: Alternative to Neon.tech
