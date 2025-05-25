@@ -4,5 +4,15 @@ git add .
 git commit -m "fix: update route paths to match backend API structure" | cat
 git push origin feature-cursor | cat
 
+//Merge and Push to Main
+git status | cat
+
+git checkout main | cat
+git merge feature-cloud-deploy | cat
+git push origin main | cat
+
+git checkout feature-cloud-deploy | cat
+
+
 Once you change the Field in DB: add the field in the schema.prisma and run the below command
 npx prisma generate
