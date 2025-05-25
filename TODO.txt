@@ -1,3 +1,11 @@
+Create an admin interface for managing vendor images?
+
+
+
+
+
+Cloud setup
+
 Database Setup:
 Sign up for a free PostgreSQL database on Neon.tech
 Create a new project and get your database URL
