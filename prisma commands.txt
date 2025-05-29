@@ -1,2 +1,5 @@
+First, adding the userId field to the Rating model:
+npx prisma migrate dev --name add_user_id_to_ratings
+
 Once you change the Field in DB: add the field in the schema.prisma and run the below command
 npx prisma generate
