@@ -1,0 +1,2 @@
+Once you change the Field in DB: add the field in the schema.prisma and run the below command
+npx prisma generate
