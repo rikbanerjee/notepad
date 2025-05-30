@@ -3,3 +3,7 @@ npx prisma migrate dev --name add_user_id_to_ratings
 
 Once you change the Field in DB: add the field in the schema.prisma and run the below command
 npx prisma generate
+
+
+npx prisma migrate dev
+prisma migrate reset //to drop the development database.
